@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "696678333024",
+    "project_id": "ca3-family-mgmt",
+    "storage_bucket": "ca3-family-mgmt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696678333024:android:9ebc7b8e860f105bdca105",
+        "android_client_info": {
+          "package_name": "com.example.familymgmtca3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696678333024-684kcfmvgbdgtnr7qig1j9ae73jn2323.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnz4UO3YOv1K097_nrQ8r3KQF1mCRewt8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696678333024-684kcfmvgbdgtnr7qig1j9ae73jn2323.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
