@@ -9,6 +9,7 @@
     <!-- Login & Register -->
     <string name="email">Email</string>
     <string name="password">Password</string>
+    <string name="family_name">Family Name</string>
 
     <string name="go_to_landing_page">Go to Landing Page</string>
 </resources>

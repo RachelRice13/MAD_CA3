@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         Button goToLogin = findViewById(R.id.lp_login_button);
-
         goToLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -28,6 +27,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(loginIntent);
             }
         });
+
+        Button goToRegisterFamily = findViewById(R.id.lp_register_button);
+        goToRegisterFamily.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent registerIntent = new Intent(MainActivity.this, RegisterFamilyActivity.class);
+                startActivity(registerIntent);
+            }
+        }));
 
     }
 

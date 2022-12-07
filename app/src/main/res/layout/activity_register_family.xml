@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="30dp"
-    tools:context=".LoginActivity">
+    tools:context=".RegisterFamilyActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,13 +15,14 @@
         android:layout_gravity="center_vertical">
 
         <TextView
-            android:id="@+id/login_title"
+            android:id="@+id/register_family_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/login"
+            android:text="@string/register_family"
             android:textColor="@color/black"
             android:textSize="40sp"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"/>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -28,36 +30,36 @@
             android:layout_marginTop="20dp">
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/login_email"
+                android:id="@+id/register_family_name"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/email"
+                android:hint="@string/family_name"
                 android:textColorHint="@color/black"
                 app:endIconTint="@color/black"
-                app:startIconDrawable="@drawable/ic_email"
+                app:startIconDrawable="@drawable/ic_home"
                 app:startIconTint="@color/black"
                 app:boxStrokeColor="@color/grey"
+                android:layout_marginBottom="20dp"
                 app:boxStrokeWidth="1dp"
-                app:hintTextColor="@color/black"
-                android:layout_marginBottom="20dp">
+                app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/login_email_editText"
+                    android:id="@+id/register_family_name_editText"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:inputType="textEmailAddress"
+                    android:inputType="textPersonName"
                     android:textColor="@color/black"
                     android:textColorHint="#546E7A" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/login_password"
+                android:id="@+id/register_password"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/login_email"
+                android:layout_below="@id/register_family_name"
                 android:hint="@string/password"
                 android:textColorHint="@color/black"
                 app:endIconMode="password_toggle"
@@ -70,7 +72,7 @@
                 android:layout_marginBottom="20dp">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/login_password_editText"
+                    android:id="@+id/register_password_editText"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:inputType="textPassword"
@@ -78,23 +80,23 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
-                android:id="@+id/login_button"
+                android:id="@+id/register_family_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/login_password"
+                android:layout_below="@id/register_password"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="@color/navy"
-                android:text="@string/login"
+                android:text="@string/register_family"
                 android:textColor="@color/white"
                 android:layout_centerHorizontal="true"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 tools:ignore="DuplicateSpeakableTextCheck" />
 
             <Button
                 android:id="@+id/go_to_landing_page_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/login_button"
+                android:layout_below="@id/register_family_button"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:textAllCaps="false"
