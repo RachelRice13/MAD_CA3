@@ -7,29 +7,25 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         // Hides the action bar
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
 
-        Button goToLogin = findViewById(R.id.lp_login_button);
-
-        goToLogin.setOnClickListener(new View.OnClickListener() {
+        Button goToLandingPage = findViewById(R.id.go_to_landing_page_button);
+        goToLandingPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent loginIntent = new Intent(MainActivity.this, LoginActivity.class);
-                startActivity(loginIntent);
+                Intent goToLpIntent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(goToLpIntent);
             }
         });
-
     }
-
-
 }

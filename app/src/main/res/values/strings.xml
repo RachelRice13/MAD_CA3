@@ -5,4 +5,10 @@
     <string name="landing_page_title">ProFamily</string>
     <string name="register_family">Register Family</string>
     <string name="login">Login</string>
+
+    <!-- Login & Register -->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <string name="go_to_landing_page">Go to Landing Page</string>
 </resources>
